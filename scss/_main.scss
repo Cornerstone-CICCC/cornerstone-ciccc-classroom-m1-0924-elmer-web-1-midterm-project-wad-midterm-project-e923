@@ -1,0 +1,35 @@
+@import "variables";
+
+main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    .profile{
+        background-color:$nav_bar_color;
+        margin: 1.5em;
+        img{
+            width: 10em;
+            border-radius: 20%;
+        }
+        text-align: center;
+        .socials{
+            ul{
+                list-style: none;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                padding: 0;
+                
+                column-gap: 10px;
+            }
+            svg{
+                width: 1.5em;
+            }
+        }
+    }
+    .info{
+        grid-column: 4/5;
+        padding: 1em;
+    }
+}
