@@ -5,6 +5,11 @@ main{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     .profile{
+        border-radius:10% 40%;
+        -webkit-border-radius:10% 40%;
+        -moz-border-radius:10% 40%;
+        -ms-border-radius:10% 40%;
+        -o-border-radius:10% 40%;
         background-color:$nav_bar_color;
         margin: 1.5em;
         img{
@@ -12,7 +17,11 @@ main{
             border-radius: 20%;
         }
         text-align: center;
+        p{
+            padding: 0 .5em;
+        }
         .socials{
+            position: sticky;
             ul{
                 list-style: none;
                 display: flex;
@@ -31,5 +40,16 @@ main{
     .info{
         grid-column: 4/5;
         padding: 1em;
+        .main_title{
+            text-align: center;
+            font-size: 2em;
+        }
+        .main_title_color{
+            color: $second_part_title;
+        }
+        .goal{
+            text-align: center;
+            font-size: 1.3em;
+        }
     }
 }

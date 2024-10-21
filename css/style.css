@@ -8,6 +8,7 @@ body {
 }
 
 header {
+  position: sticky;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -17,11 +18,18 @@ header div {
   height: 3.5em;
   width: 13em;
   background-color: #393e46;
+  border-radius: 30%;
+  -webkit-border-radius: 55%;
+  -moz-border-radius: 30%;
+  -ms-border-radius: 30%;
+  -o-border-radius: 30%;
 }
 header div ul {
   display: flex;
   flex-direction: row;
   column-gap: 10px;
+  padding: 0;
+  justify-content: center;
 }
 header div ul li {
   list-style: none;
@@ -36,6 +44,11 @@ main {
   grid-template-rows: 1fr;
 }
 main .profile {
+  border-radius: 10% 40%;
+  -webkit-border-radius: 10% 40%;
+  -moz-border-radius: 10% 40%;
+  -ms-border-radius: 10% 40%;
+  -o-border-radius: 10% 40%;
   background-color: #393e46;
   margin: 1.5em;
   text-align: center;
@@ -43,6 +56,12 @@ main .profile {
 main .profile img {
   width: 10em;
   border-radius: 20%;
+}
+main .profile p {
+  padding: 0 0.5em;
+}
+main .profile .socials {
+  position: sticky;
 }
 main .profile .socials ul {
   list-style: none;
@@ -59,6 +78,17 @@ main .profile .socials svg {
 main .info {
   grid-column: 4/5;
   padding: 1em;
+}
+main .info .main_title {
+  text-align: center;
+  font-size: 2em;
+}
+main .info .main_title_color {
+  color: black;
+}
+main .info .goal {
+  text-align: center;
+  font-size: 1.3em;
 }
 
 /*# sourceMappingURL=style.css.map */
