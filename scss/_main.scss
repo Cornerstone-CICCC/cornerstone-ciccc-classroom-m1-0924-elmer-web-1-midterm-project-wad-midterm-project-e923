@@ -1,55 +1,92 @@
 @import "variables";
 
 main{
+    padding: 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
-    .profile{
-        border-radius:10% 40%;
-        -webkit-border-radius:10% 40%;
-        -moz-border-radius:10% 40%;
-        -ms-border-radius:10% 40%;
-        -o-border-radius:10% 40%;
-        background-color:$nav_bar_color;
-        margin: 1.5em;
-        img{
-            width: 10em;
-            border-radius: 20%;
-        }
-        text-align: center;
-        p{
-            padding: 0 .5em;
-        }
-        .socials{
+    width: 100%;
+    div{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 1em;
+        .profile{
             position: sticky;
-            ul{
-                list-style: none;
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content: center;
-                padding: 0;
-                
-                column-gap: 10px;
+            top: 0;
+            padding: 0;
+            margin: 0 auto;
+            border-radius:10% 40%;
+            -webkit-border-radius:10% 40%;
+            -moz-border-radius:10% 40%;
+            -ms-border-radius:10% 40%;
+            -o-border-radius:10% 40%;
+            background-color:$nav_bar_color;
+            height:80%;
+            img{
+                width: 10em;
+                border-radius: 20%;
             }
-            svg{
-                width: 1.5em;
+            text-align: center;
+            p{
+                padding: 0 .5em;
+            }
+            .socials{
+                ul{
+                    list-style: none;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 0;
+                    
+                    column-gap: 10px;
+                }
+                svg{
+                    width: 1.5em;
+                }
             }
         }
     }
     .info{
-        grid-column: 4/5;
+        grid-column: 2/4;
         padding: 1em;
         .main_title{
             text-align: center;
-            font-size: 2em;
+            font-size: 4em;
         }
         .main_title_color{
             color: $second_part_title;
         }
         .goal{
             text-align: center;
-            font-size: 1.3em;
+            font-size: 2em;
+        }
+        .experience{
+            ul{
+                list-style: none;
+                display: flex;
+                flex-direction:row;
+                justify-content: space-between;
+                text-align: center;
+                padding: 0;
+                width: 100%;
+                li{
+                    width: 7em;
+                    height: 7em;
+                    border: 2px solid $second_part_title;
+                    border-radius: 10% 60% 10% 60%;
+                    -webkit-border-radius: 10% 60% 10% 60%;
+                    -moz-border-radius: 10% 60% 10% 60%;
+                    -ms-border-radius: 10% 60% 10% 60%;
+                    -o-border-radius: 10% 60% 10% 60%;
+                    padding:0 .6em;
+                    text-align: center;
+                    font-weight: bold;
+                    justify-content: center;
+}
+            }
         }
     }
 }

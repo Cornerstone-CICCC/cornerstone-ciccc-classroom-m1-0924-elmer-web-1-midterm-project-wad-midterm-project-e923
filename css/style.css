@@ -9,6 +9,7 @@ body {
 
 header {
   position: sticky;
+  top: 0;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -39,31 +40,41 @@ header div ul li svg {
 }
 
 main {
+  padding: 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
+  width: 100%;
 }
-main .profile {
+main div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 1em;
+}
+main div .profile {
+  position: sticky;
+  top: 0;
+  padding: 0;
+  margin: 0 auto;
   border-radius: 10% 40%;
   -webkit-border-radius: 10% 40%;
   -moz-border-radius: 10% 40%;
   -ms-border-radius: 10% 40%;
   -o-border-radius: 10% 40%;
   background-color: #393e46;
-  margin: 1.5em;
+  height: 80%;
   text-align: center;
 }
-main .profile img {
+main div .profile img {
   width: 10em;
   border-radius: 20%;
 }
-main .profile p {
+main div .profile p {
   padding: 0 0.5em;
 }
-main .profile .socials {
-  position: sticky;
-}
-main .profile .socials ul {
+main div .profile .socials ul {
   list-style: none;
   display: flex;
   flex-direction: row;
@@ -72,23 +83,46 @@ main .profile .socials ul {
   padding: 0;
   column-gap: 10px;
 }
-main .profile .socials svg {
+main div .profile .socials svg {
   width: 1.5em;
 }
 main .info {
-  grid-column: 4/5;
+  grid-column: 2/4;
   padding: 1em;
 }
 main .info .main_title {
   text-align: center;
-  font-size: 2em;
+  font-size: 4em;
 }
 main .info .main_title_color {
   color: black;
 }
 main .info .goal {
   text-align: center;
-  font-size: 1.3em;
+  font-size: 2em;
+}
+main .info .experience ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  padding: 0;
+  width: 100%;
+}
+main .info .experience ul li {
+  width: 7em;
+  height: 7em;
+  border: 2px solid black;
+  border-radius: 10% 60% 10% 60%;
+  -webkit-border-radius: 10% 60% 10% 60%;
+  -moz-border-radius: 10% 60% 10% 60%;
+  -ms-border-radius: 10% 60% 10% 60%;
+  -o-border-radius: 10% 60% 10% 60%;
+  padding: 0 0.6em;
+  text-align: center;
+  font-weight: bold;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */
