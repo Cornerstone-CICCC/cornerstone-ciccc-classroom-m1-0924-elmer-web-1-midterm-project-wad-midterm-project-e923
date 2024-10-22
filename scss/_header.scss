@@ -1,7 +1,7 @@
 @import "variables";
 header{
     position: sticky;
-    top:0;
+    top: 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -19,7 +19,7 @@ header{
         ul{
             display: flex;
             flex-direction: row;
-            column-gap: 10px;
+            column-gap: 20px;
             padding: 0;
             justify-content: center;
     
@@ -27,7 +27,17 @@ header{
                 list-style: none;
                 svg{
                     width: 1.5em;
+                    opacity: 0.2;
+                    transition: 1s;
+                    -webkit-transition: 1s;
+                    -moz-transition: 1s;
+                    -ms-transition: 1s;
+                    -o-transition: 1s;
+                    &:hover{
+                        opacity: 1;
+                        }
                 }
+                
             }
         }
     }
