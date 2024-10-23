@@ -64,7 +64,7 @@ header div ul li svg:hover {
 
 main {
   padding: 0;
-  margin-top: -3em;
+  margin-top: -4em;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
@@ -77,12 +77,16 @@ main div {
   margin: 0;
 }
 main div .profile {
-  position: sticky;
-  top: 20px;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 0;
   padding: 0;
   margin: 0 auto;
   background-color: #393e46;
-  height: 40em;
+  height: 45em;
   text-align: center;
 }
 main div .profile img {
@@ -148,7 +152,8 @@ main .info .part_1 .experience ul {
   list-style: none;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
+  column-gap: 2em;
   text-align: center;
   padding: 0;
   width: 100%;
@@ -191,6 +196,11 @@ main .info .part_2 .projects li {
   -moz-transform: scale(1);
   -ms-transform: scale(1);
   -o-transform: scale(1);
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
   /* width */
   /* Track */
   /* Handle on hover */

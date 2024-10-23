@@ -25,8 +25,10 @@
                 emailjs.sendForm('service_zbn89ad', 'template_105b6yn', this)
                     .then(() => {
                         console.log('SUCCESS!');
+                        alert("Mail sent");
                     }, (error) => {
                         console.log('FAILED...', error);
+                        alert("Something went wrong try again");
                     });
             });
         }
