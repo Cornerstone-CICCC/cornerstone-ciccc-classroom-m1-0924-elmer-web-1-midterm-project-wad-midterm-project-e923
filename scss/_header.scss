@@ -10,24 +10,32 @@ header{
         height: 3.5em;
         width: 13em;
         background-color:$nav_bar_color;
-        border-radius: 30%;
-        -webkit-border-radius: 55%;
-        -moz-border-radius: 30%;
-        -ms-border-radius: 30%;
-        -o-border-radius: 30%;
-        
+        border-radius: 10%;
+        -webkit-border-radius: 10%;
+        -moz-border-radius: 10%;
+        -ms-border-radius: 10%;
+        -o-border-radius: 10%;
+        transition: 1s;
+        -webkit-transition: 1s;
+        -moz-transition: 1s;
+        -ms-transition: 1s;
+        -o-transition: 1s;
+        box-shadow: none;
+        &:hover{
+            box-shadow: 2px 2px 20px 2px  $text_color;
+        }
         ul{
             display: flex;
             flex-direction: row;
             column-gap: 20px;
             padding: 0;
             justify-content: center;
-    
+            align-items: center;
             li{
                 list-style: none;
                 svg{
                     width: 1.5em;
-                    opacity: 0.2;
+                    opacity: 0.5;
                     transition: 1s;
                     -webkit-transition: 1s;
                     -moz-transition: 1s;
