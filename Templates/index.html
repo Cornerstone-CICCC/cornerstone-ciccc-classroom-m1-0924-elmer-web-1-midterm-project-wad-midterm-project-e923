@@ -26,6 +26,7 @@
                     .then(() => {
                         console.log('SUCCESS!');
                         alert("Mail sent");
+                        this.reset()
                     }, (error) => {
                         console.log('FAILED...', error);
                         alert("Something went wrong try again");

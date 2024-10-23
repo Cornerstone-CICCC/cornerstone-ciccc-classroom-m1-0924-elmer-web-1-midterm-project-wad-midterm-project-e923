@@ -51,10 +51,10 @@ main{
                     align-items: center;
                     justify-content: center;
                     padding: 0;
-                    column-gap: 20px;
+                    column-gap: 2.5em;
                 }
                 svg{
-                    width: 1.5em;
+                    width: 2em;
                 }
             }
         }
@@ -265,6 +265,7 @@ main{
                                 background-color: $main_color;
                                 color: $text_color;
                                 border: 1px solid $text_color;
+                                padding-left: .5em;
                             }
                         }
                     }
@@ -277,13 +278,14 @@ main{
                         row-gap: .2em;
                         textarea{
                             color: $text_color;
-                            text-align: center;
+                            padding: 1em;
                             background-color: $main_color;
                             border: 1px solid $text_color;
                         }
                     }
                     .button_container{
                         margin: 0 auto;
+                        padding: .5em 0;
                         .button{
                             background-color: $button;
                             width:30%;

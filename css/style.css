@@ -115,10 +115,10 @@ main div .profile .socials ul {
   align-items: center;
   justify-content: center;
   padding: 0;
-  column-gap: 20px;
+  column-gap: 2.5em;
 }
 main div .profile .socials svg {
-  width: 1.5em;
+  width: 2em;
 }
 main .info {
   grid-column: 2/4;
@@ -319,6 +319,7 @@ main .info .part_5 .form form .container .container_elements input {
   background-color: #222831;
   color: #eeeeee;
   border: 1px solid #eeeeee;
+  padding-left: 0.5em;
 }
 main .info .part_5 .form form .container_textarea {
   display: flex;
@@ -330,12 +331,13 @@ main .info .part_5 .form form .container_textarea {
 }
 main .info .part_5 .form form .container_textarea textarea {
   color: #eeeeee;
-  text-align: center;
+  padding: 1em;
   background-color: #222831;
   border: 1px solid #eeeeee;
 }
 main .info .part_5 .form form .button_container {
   margin: 0 auto;
+  padding: 0.5em 0;
 }
 main .info .part_5 .form form .button_container .button {
   background-color: #f6490d;
