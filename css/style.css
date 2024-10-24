@@ -1,5 +1,31 @@
+header {
+  background: linear-gradient(to right, #d2cfcb, #e5e3df);
+  position: fixed;
+  width: 100%;
+}
+header .logo {
+  text-align: center;
+}
+header .logo a {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 40px;
+  color: white;
+  text-shadow: 3px 3px #558abb;
+  text-align: center;
+  text-decoration: none;
+}
+header nav {
+  display: none;
+}
+
+main {
+  padding: 63px 10px 10px 10px;
+}
+
 body {
   width: 100%;
+  box-sizing: border-box;
+  margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
