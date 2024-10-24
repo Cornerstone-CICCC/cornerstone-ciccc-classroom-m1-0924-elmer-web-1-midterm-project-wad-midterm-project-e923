@@ -1,6 +1,7 @@
 @import "variables";
 
-@media(min-width: 599){
+//screen size 600px//
+@media(min-width: $phone),(max-width: 800px){
     main{
         padding: 0;
         margin-top: 1em;
@@ -74,7 +75,7 @@
                     ul{
                         list-style: none;
                         display: flex;
-                        flex-direction:column;
+                        flex-direction:row;
                         justify-content:center;
                         column-gap: 2em;
                         text-align: center;
@@ -113,7 +114,7 @@
                 .projects{
                     width: 90%;
                     display: flex;
-                    flex-direction: column;
+                    flex-direction: row;
                     column-gap: .5em;
                     padding: 0;
                     padding-bottom: 2em;
@@ -233,35 +234,29 @@
                 .form{
                     background-color: transparent;
                     border: 1px solid $text_color;
-                    width: auto;
-                    max-width: 80%;
+                    width: 80%;
                     height: auto;
                     margin: 0 auto;
                     padding: 0;
                     padding-bottom: 2em;
                     form{
-                        width: auto;
-                        max-width: 80%;
+                        width: 80%;
                         padding: 0;
                         margin: 0 auto;
                         .container{
-                            width: auto;
-                            max-width: 100%;
+                            width: 100%;
                             margin: 0;
                             padding: 0;
                             display: flex;
                             flex-direction: row;
-                            column-gap: .4em;
+                            column-gap: .6em;
                             .container_elements{
-                                width: auto;
-                                max-width: 50%;
+                                width: 100%;
                                 display: flex;
                                 flex-direction: column;
                                 row-gap: .2em;
                                 text-align: center;
                                 input{
-                                    width: auto;
-                                    max-width: 100%;
                                     cursor: pointer;
                                     background-color: $main_color;
                                     color: $text_color;

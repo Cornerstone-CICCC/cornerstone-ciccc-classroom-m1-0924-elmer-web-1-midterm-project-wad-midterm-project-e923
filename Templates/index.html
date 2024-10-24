@@ -57,14 +57,16 @@
     <main id="home">
         <div>
             <section class="profile">
-                <figure>
-                    <img src="/images/Profile.jpg" alt="Developer image">
-                </figure>
-                <div class="personal_info">
-                    <p>Christian Alexis Jimenez</p>
-                    <p>Jr Web developer in progress, creative and problem solver.</p>
-                    <p>Currently studing Web dev in CICC</p>
-                    <p>Bachelor in Biomedical Engineer</p>
+                <div class="container_profile">
+                    <figure>
+                        <img src="/images/Profile.jpg" alt="Developer image">
+                    </figure>
+                    <div class="personal_info">
+                        <p>Christian Alexis Jimenez</p>
+                        <p>Jr Web developer in progress, creative and problem solver.</p>
+                        <p>Currently studing Web dev in CICC</p>
+                        <p>Bachelor in Biomedical Engineer</p>
+                    </div>
                 </div>
                 <div class="socials">
                     <ul>
@@ -91,16 +93,22 @@
                 <div class="experience">
                     <ul>
                         <li>
-                            <p>1</p>
-                            <label>Years of experience</label>
+                            <details open>
+                                <summary v-show="!isvisible">try</summary>
+                                <p>Years of experience</p>
+                            </details>
                         </li>
                         <li>
-                            <p>2</p>
-                            <label>Projects Completed</label>
+                            <details open>
+                                <summary v-show="!isvisible">Try</summary>
+                                <p>Years of experience</p>
+                            </details>
                         </li>
                         <li>
-                            <P>CICC</P>
-                            <label>Currently</label>
+                            <details open>
+                                <summary v-show="!isvisible">Studing</summary>
+                                <p>Cornerstone College</p>
+                            </details>
                         </li>
                     </ul>
                 </div>
@@ -213,7 +221,7 @@
                         <li>Concepts Desings</li>
                         <li>Tecnologies to use</li>
                         <li>Start Building</li>
-                        <li>Final Desing</li>
+                        <li>Final Design</li>
                         <li>Deployment</li>
                     </ol>
                 </div>
