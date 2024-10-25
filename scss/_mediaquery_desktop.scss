@@ -38,8 +38,8 @@
         grid-template-rows: 1fr;
         width: 100%;
         div{
-            grid-column: 1;
             width: 40em;
+            height: 30em;
             padding: 0;
             display: flex;
             flex-direction: column;
@@ -299,7 +299,7 @@
                     background-color: transparent;
                     border: 1px solid $text_color;
                     width: 80%;
-                    height: auto;
+                    height: 100%;
                     margin: 0 auto;
                     padding: 0;
                     padding-bottom: 2em;
@@ -309,6 +309,7 @@
                         margin: 0 auto;
                         .container{
                             width: 100%;
+                            height: fit-content;
                             margin: 0;
                             padding: 0;
                             display: flex;
@@ -316,10 +317,11 @@
                             column-gap: .4em;
                             .container_elements{
                                 width: 100%;
+                                height: fit-content;
                                 display: flex;
                                 flex-direction: column;
                                 row-gap: .2em;
-                                padding: .5em 0;
+                                padding: 1em 0;
                                 text-align: center;
                                 input{
                                     width: auto;
@@ -333,11 +335,13 @@
                             }
                         }
                         .container_textarea{
+                            margin: 0;
+                            height: fit-content;
                             display: flex;
                             flex-direction: column;
                             text-align: center;
                             color: $text_color;
-                            padding:  .5em 0;
+                            padding:  1em 0;
                             row-gap: .2em;
                             width: 100%;
                             textarea{
@@ -350,6 +354,7 @@
                         }
                         .button_container{
                             width: auto;
+                            height: fit-content;
                             margin: 0 auto;
                             padding: 2em 0 0 0;
                             display: flex;

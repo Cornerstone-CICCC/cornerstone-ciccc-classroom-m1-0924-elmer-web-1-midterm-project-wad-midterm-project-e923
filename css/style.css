@@ -98,8 +98,8 @@ footer {
     width: 100%;
   }
   main div {
-    grid-column: 1;
     width: 40em;
+    height: 30em;
     padding: 0;
     display: flex;
     flex-direction: column;
@@ -353,7 +353,7 @@ footer {
     background-color: transparent;
     border: 1px solid #eeeeee;
     width: 80%;
-    height: auto;
+    height: 100%;
     margin: 0 auto;
     padding: 0;
     padding-bottom: 2em;
@@ -365,6 +365,7 @@ footer {
   }
   main .info .part_5 .form form .container {
     width: 100%;
+    height: fit-content;
     margin: 0;
     padding: 0;
     display: flex;
@@ -373,10 +374,11 @@ footer {
   }
   main .info .part_5 .form form .container .container_elements {
     width: 100%;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     row-gap: 0.2em;
-    padding: 0.5em 0;
+    padding: 1em 0;
     text-align: center;
   }
   main .info .part_5 .form form .container .container_elements input {
@@ -389,11 +391,13 @@ footer {
     padding-left: 0.5em;
   }
   main .info .part_5 .form form .container_textarea {
+    margin: 0;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     text-align: center;
     color: #eeeeee;
-    padding: 0.5em 0;
+    padding: 1em 0;
     row-gap: 0.2em;
     width: 100%;
   }
@@ -406,6 +410,7 @@ footer {
   }
   main .info .part_5 .form form .button_container {
     width: auto;
+    height: fit-content;
     margin: 0 auto;
     padding: 2em 0 0 0;
     display: flex;
@@ -497,7 +502,7 @@ footer {
   }
   main div .profile .container_profile {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -860,7 +865,7 @@ footer {
   }
   main div .profile .container_profile {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 0;
