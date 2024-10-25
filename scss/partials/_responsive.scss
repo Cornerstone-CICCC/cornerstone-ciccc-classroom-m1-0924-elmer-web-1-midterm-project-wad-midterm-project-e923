@@ -1,33 +1,32 @@
+@media screen and (max-width:468px) {
+    main {
+        .home {
+            p {
+                padding-left: 0;
+            }
+        }
+    }
+}
+
 @media screen and (max-width:330px) {
-    .home {
+    main {
 
-        #top {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
-            h1 {
-                flex-basis: 1rem;
+        .home {
+
+            #top {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: flex-start;
+            }
+
+            p {
+                padding-left: 0;
             }
         }
     }
 }
 
-@media screen and (max-width: 500px) {
-    .home {
-        #top {
-            display: flex;
-            justify-content: center;
-            h1 {
-                flex-basis: 1rem;
-            }
-        }
-
-        p {
-            flex-basis: 22rem;
-        }
-    }
-}
 
 // @media screen and (max-width:200px) {
 //     .home {

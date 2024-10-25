@@ -24,7 +24,7 @@ main {
 main .home {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   align-content: center;
 }
 main .home #top {
@@ -32,42 +32,41 @@ main .home #top {
   align-items: center;
 }
 main .home p {
-  margin-left: 20px;
+  padding-left: 128px;
 }
 main .home img {
   width: 100px;
   height: 100px;
+  min-width: 100px;
+  min-height: 100px;
   border-radius: 50%;
   object-fit: cover;
   margin-right: 28px;
 }
+main section {
+  margin: 0 1vw;
+}
+main section h2 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+main section p {
+  margin: 0 auto;
+}
 
+@media screen and (max-width: 468px) {
+  main .home p {
+    padding-left: 0;
+  }
+}
 @media screen and (max-width: 330px) {
-  .home #top {
+  main .home #top {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
   }
-  .home #top h1 {
-    flex-basis: 1rem;
-  }
-}
-@media screen and (max-width: 500px) {
-  .home #top {
-    display: flex;
-    justify-content: center;
-  }
-  .home #top h1 {
-    flex-basis: 1rem;
-  }
-  .home p {
-    flex-basis: 22rem;
-  }
-}
-@media screen and (max-width: 200px) {
-  .home {
-    display: flex;
+  main .home p {
+    padding-left: 0;
   }
 }
 body {

@@ -4,7 +4,7 @@ main {
     .home {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: flex-start;
         align-content: center;
 
         #top {
@@ -13,15 +13,30 @@ main {
         }
 
        p {
-        margin-left: 20px;
+        padding-left: 128px;
        }
 
         img {
             width: 100px;
             height: 100px;
+            min-width: 100px;
+            min-height: 100px;
             border-radius: 50%;
             object-fit: cover;
             margin-right: 28px;
+        }
+
+    }
+
+    section {
+        margin: 0 1vw;
+
+        h2 {
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+        }
+
+        p {
+            margin: 0 auto;
         }
 
     }
