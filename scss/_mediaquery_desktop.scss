@@ -3,7 +3,7 @@
 
 //screen size 900px//
 // header
-@media (min-width: $tablet) {
+@media (min-width: $desktop) {
     header{
         top: 4px;
         div{
@@ -27,7 +27,7 @@
     }
 }
 //main//
-@media(min-width: $tablet){
+@media(min-width: $desktop){
     main{
         padding: 0;
         margin-top: -4em;

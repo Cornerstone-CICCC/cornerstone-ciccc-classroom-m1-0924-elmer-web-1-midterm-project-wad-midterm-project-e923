@@ -1,10 +1,13 @@
-// parts of the page
+//generals
 @import "variables";
 @import "general";
+
+//Header-footer
 @import "header";
-@import "main";
 @import "footer";
 
 //media query
-@import "mediaquery_tablet";
+@import "mediaquery_desktop";
+@import "mediaquery_tablets";
+@import "mediaquery_small_device";
 @import "mediaquery_cellphone";

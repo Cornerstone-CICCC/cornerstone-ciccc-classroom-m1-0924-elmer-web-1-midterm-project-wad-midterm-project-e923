@@ -1,0 +1,64 @@
+@import "variables";
+
+//screen size 600px//
+@media(min-width: $tablet){
+    main{
+        padding: 0;
+        margin-top: 1em;
+        display: grid;
+        div{
+            padding: 0;
+            .profile{
+                .container_profile{
+                    img{
+                        width: auto;
+                        max-width: 10em;
+                    }
+                    text-align: center;
+                }
+                .socials{
+                    svg{
+                        width: 2.3em;
+                    }
+                }
+            }
+        }
+        .info{
+            .part_1{
+                .experience{
+                    ul{
+                        display: flex;
+                        flex-direction:row;
+                        justify-content:center;
+                    }
+                }
+            }
+            .part_2{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 0;
+                padding: 0;
+                .projects{
+                    width: 90%;
+                    display: flex;
+                    flex-direction: row;
+                }
+            }
+            .part_5{
+                .form{
+                    width: 80%;
+                    form{
+                        width: 80%;
+                        .container{
+                            width: 100%;
+                            .container_elements{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
