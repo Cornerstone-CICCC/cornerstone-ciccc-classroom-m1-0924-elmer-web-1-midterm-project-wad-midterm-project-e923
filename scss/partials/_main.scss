@@ -1,4 +1,36 @@
 main {
     padding: 63px 10px 10px 10px;
+
+    .home {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+
+        #top {
+            display: flex;
+            align-items: center;
+            h1 {
+           
+            }
+        }
+
+       p {
+        margin-left: 20px;
+       }
+
+        img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 28px;
+        }
+
+    }
+
     
+
+    
+
 }

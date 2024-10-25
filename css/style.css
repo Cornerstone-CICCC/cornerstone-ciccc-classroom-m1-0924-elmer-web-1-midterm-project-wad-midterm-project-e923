@@ -21,7 +21,50 @@ header nav {
 main {
   padding: 63px 10px 10px 10px;
 }
+main .home {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+main .home #top {
+  display: flex;
+  align-items: center;
+}
+main .home p {
+  margin-left: 20px;
+}
+main .home img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 28px;
+}
 
+@media screen and (max-width: 330px) {
+  .home #top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .home #top h1 {
+    flex-basis: 1rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .home #top {
+    display: flex;
+    justify-content: center;
+  }
+  .home #top h1 {
+    flex-basis: 1rem;
+  }
+  .home p {
+    flex-basis: 22rem;
+  }
+}
 body {
   width: 100%;
   box-sizing: border-box;

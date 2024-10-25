@@ -1,0 +1,30 @@
+@media screen and (max-width:330px) {
+    .home {
+
+        #top {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            h1 {
+                flex-basis: 1rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .home {
+        #top {
+            display: flex;
+            justify-content: center;
+            h1 {
+                flex-basis: 1rem;
+            }
+        }
+
+        p {
+            flex-basis: 22rem;
+        }
+    }
+}
