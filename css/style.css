@@ -65,6 +65,11 @@ main .home img {
     flex-basis: 22rem;
   }
 }
+@media screen and (max-width: 200px) {
+  .home {
+    display: flex;
+  }
+}
 body {
   width: 100%;
   box-sizing: border-box;
