@@ -1,13 +1,67 @@
 @import "variables";
 
-@media(min-width($small_device)){
+@media(max-width: $desktop){
+    header{
+        margin: 0;
+        position: sticky;
+        top: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0px;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        -ms-border-radius: 0px;
+        -o-border-radius: 0px;
+        -webkit-border-radius: 0;
+        div{
+            height: 3.5em;
+            width: 100%;
+            background-color:$nav_bar_color;
+            transition: 1s;
+            -webkit-transition: 1s;
+            -moz-transition: 1s;
+            -ms-transition: 1s;
+            -o-transition: 1s;
+            box-shadow: none;
+            &:hover{
+                box-shadow: 2px 2px 20px 2px  $text_color;
+            }
+            ul{
+                display: flex;
+                flex-direction: row;
+                column-gap: 40px;
+                padding: 0;
+                justify-content: center;
+                align-items: center;
+                li{
+                    list-style: none;
+                    svg{
+                        width: 2em;
+                        opacity: 0.5;
+                        transition: 1s;
+                        -webkit-transition: 1s;
+                        -moz-transition: 1s;
+                        -ms-transition: 1s;
+                        -o-transition: 1s;
+                        &:hover{
+                            opacity: 1;
+                            }
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: $desktop){
     main{
-        overflow: hidden;
         padding: 0;
         margin-top: 1em;
-        display: grid;
-        grid-template-rows: 1fr;
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
         width: 100%;
         div{
             padding: 0;
