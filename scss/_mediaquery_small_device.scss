@@ -299,32 +299,30 @@
                 .form{
                     background-color: transparent;
                     border: 1px solid $text_color;
-                    width: auto;
-                    max-width: 80%;
-                    height: auto;
+                    width: 80%;
+                    height: 100%;
                     margin: 0 auto;
                     padding: 0;
                     padding-bottom: 2em;
                     form{
-                        width: auto;
-                        max-width: 80%;
+                        width: 80%;
                         padding: 0;
                         margin: 0 auto;
                         .container{
-                            width: auto;
-                            max-width: 100%;
+                            width: 100%;
+                            height: fit-content;
                             margin: 0;
                             padding: 0;
                             display: flex;
                             flex-direction: row;
                             column-gap: .4em;
                             .container_elements{
-                                width: auto;
-                                max-width: 50%;
+                                width: 100%;
+                                height: fit-content;
                                 display: flex;
                                 flex-direction: column;
                                 row-gap: .2em;
-                                padding: .5em 0;
+                                padding: 1em 0;
                                 text-align: center;
                                 input{
                                     width: auto;
@@ -338,12 +336,15 @@
                             }
                         }
                         .container_textarea{
+                            margin: 0;
+                            height: fit-content;
                             display: flex;
                             flex-direction: column;
                             text-align: center;
                             color: $text_color;
-                            padding:  .5em 0;
+                            padding:  1em 0;
                             row-gap: .2em;
+                            width: 100%;
                             textarea{
                                 cursor: pointer;
                                 color: $text_color;
@@ -353,6 +354,8 @@
                             }
                         }
                         .button_container{
+                            width: auto;
+                            height: fit-content;
                             margin: 0 auto;
                             padding: 2em 0 0 0;
                             display: flex;

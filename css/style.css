@@ -718,22 +718,20 @@ footer {
   main .info .part_5 .form {
     background-color: transparent;
     border: 1px solid #eeeeee;
-    width: auto;
-    max-width: 80%;
-    height: auto;
+    width: 80%;
+    height: 100%;
     margin: 0 auto;
     padding: 0;
     padding-bottom: 2em;
   }
   main .info .part_5 .form form {
-    width: auto;
-    max-width: 80%;
+    width: 80%;
     padding: 0;
     margin: 0 auto;
   }
   main .info .part_5 .form form .container {
-    width: auto;
-    max-width: 100%;
+    width: 100%;
+    height: fit-content;
     margin: 0;
     padding: 0;
     display: flex;
@@ -741,12 +739,12 @@ footer {
     column-gap: 0.4em;
   }
   main .info .part_5 .form form .container .container_elements {
-    width: auto;
-    max-width: 50%;
+    width: 100%;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     row-gap: 0.2em;
-    padding: 0.5em 0;
+    padding: 1em 0;
     text-align: center;
   }
   main .info .part_5 .form form .container .container_elements input {
@@ -759,12 +757,15 @@ footer {
     padding-left: 0.5em;
   }
   main .info .part_5 .form form .container_textarea {
+    margin: 0;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     text-align: center;
     color: #eeeeee;
-    padding: 0.5em 0;
+    padding: 1em 0;
     row-gap: 0.2em;
+    width: 100%;
   }
   main .info .part_5 .form form .container_textarea textarea {
     cursor: pointer;
@@ -774,6 +775,8 @@ footer {
     border: 1px solid #eeeeee;
   }
   main .info .part_5 .form form .button_container {
+    width: auto;
+    height: fit-content;
     margin: 0 auto;
     padding: 2em 0 0 0;
     display: flex;
@@ -792,7 +795,7 @@ footer {
     cursor: pointer;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 660px) {
   header {
     margin: 0;
     position: sticky;
@@ -846,7 +849,7 @@ footer {
     opacity: 1;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 660px) {
   main {
     padding: 0;
     margin-top: 0.5em;
