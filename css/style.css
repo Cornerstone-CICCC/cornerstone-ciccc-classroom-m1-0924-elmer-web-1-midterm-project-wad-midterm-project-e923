@@ -26,6 +26,9 @@ main .home {
   flex-wrap: wrap;
   justify-content: flex-start;
   align-content: center;
+  height: 500px;
+  width: 100%;
+  background-image: url(../../images/sky_thick.jpg);
 }
 main .home #top {
   display: flex;
@@ -51,6 +54,7 @@ main section h2 {
 }
 main section p {
   margin: 0 auto;
+  font-family: inherit;
 }
 
 @media screen and (max-width: 468px) {
