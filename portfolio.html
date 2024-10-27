@@ -35,7 +35,7 @@
     </header>
 
     <main>
-        <div class="home">
+        <div class="home" style="background-image: url('./images/sky_thick.jpg'); ">
             <div id="top">
                 <img src="./images/me.jpg" alt="image of me">
                 <h1>Tomoya Takeshima</h1>
@@ -44,7 +44,7 @@
             I've been learning web development since September, 2024.</p>
         </div>
 
-        <section>
+        <section class="note" style="background-image: url('./images/note_bright.jpg'); ">
             <h2 id="about">About</h2>
             <p>I enjoy using the technologies I've learned to solve problems and create websites, though it's not easy to understand. <br />
             In my free time, I enjoy playing video games, playing piano, and reading books.</p>
@@ -65,23 +65,23 @@
             </ul>
         </section>
 
-        <section>
+        <section class="nightsky" style="background-image: url('./images/night_sky2.jpg');">
             <h2 id="contact">Contact</h2>
             <p>Feel free to send me a message!</p>
             <form action="" method="post">
-                <div>
-                    <label for="name">name</label>
-                    <input id="name" type="text" name="name" placeholder="type your name...">
+                <div class="text">
+                    <label for="name">Name</label>
+                    <input id="name" type="text" name="name" placeholder="Name">
                 </div>
-                <div>
+                <div class="text">
                     <label for="mail">Email</label>
-                    <input id="mail" type="email" name="mail" placeholder="type your Email address">
+                    <input id="mail" type="email" name="mail" placeholder="Email">
                 </div>
-                <div>
+                <div class="text">
                     <label for="message">Message</label>
-                    <textarea name="message" id="message" rows="10" cols="30" placeholder="message..."></textarea>
+                    <textarea name="message" id="message" rows="10" cols="30" placeholder="message"></textarea>
                 </div>
-                <div>
+                <div class="text">
                     <input type="submit" value="send">
                 </div>
             </form>

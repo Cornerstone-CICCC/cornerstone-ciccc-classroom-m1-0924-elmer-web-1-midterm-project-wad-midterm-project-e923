@@ -2,7 +2,7 @@
     main {
         .home {
             p {
-                padding-left: 0;
+                padding: 0 2vw;
             }
         }
     }
@@ -18,10 +18,13 @@
                 flex-wrap: wrap;
                 align-items: center;
                 justify-content: flex-start;
+                h1 {
+                    padding: 0 2vw;
+                }
             }
 
             p {
-                padding-left: 0;
+                padding: 0 2vw;
             }
         }
     }

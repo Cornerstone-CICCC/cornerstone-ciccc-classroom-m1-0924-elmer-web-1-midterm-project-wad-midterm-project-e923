@@ -1,5 +1,6 @@
 main {
-    padding: 63px 10px 10px 10px;
+    padding: 50px 0 10px 0;
+    // color: white;
 
     .home {
         display: flex;
@@ -7,16 +8,28 @@ main {
         justify-content: flex-start;
         align-content: center;
         height: 500px;
-        width: 100%;
-        background-image: url(../../images/sky_thick.jpg);
+        width: 100%; 
+        background-position: center;
+        background-size: cover;
+        color: white;
+        
 
         #top {
             display: flex;
             align-items: center;
+            
+            h1 {
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                // width: 100%;
+                font-size: 50px;
+            }
         }
 
        p {
-        padding-left: 128px;
+        padding-left: 143px;
+        font-size: 22px;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 2;
        }
 
         img {
@@ -27,28 +40,70 @@ main {
             border-radius: 50%;
             object-fit: cover;
             margin-right: 28px;
+            margin-left: 10px;
         }
 
     }
 
     section {
         margin: 0 1vw;
+        height: 500px;
+        background-size: cover;
+        position: relative;
+        z-index: 1;
+
+        ::after {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: white;
+            opacity: 0.5;
+        }
 
         h2 {
-            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            position: relative;
+            z-index: 3;
+            opacity: 1;
+            margin-left: 3vw;
+
         }
 
         p {
-            margin: 0 auto;
-            font-family:inherit
+            margin: 0 3vw;
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            line-height: 2;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 0 10vw 0 3vw;
+
+            input {
+                box-sizing: border-box;
+                width: 100%;
+            }
+
+            textarea {
+                box-sizing: border-box;
+                width: 100%;
+            }
+
+            .text {
+                margin: 10px 0;
+            }
+
         }
 
     }
-
-    // .sky {
-    //     height: 500px;
-    //     background-image: url(../../note_contrast.jpg);
-    // }
 
     
 

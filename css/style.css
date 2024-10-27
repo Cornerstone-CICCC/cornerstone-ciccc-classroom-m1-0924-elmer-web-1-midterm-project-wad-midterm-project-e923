@@ -2,6 +2,7 @@ header {
   background: linear-gradient(to right, #d2cfcb, #e5e3df);
   position: fixed;
   width: 100%;
+  z-index: 999;
 }
 header .logo {
   text-align: center;
@@ -19,7 +20,7 @@ header nav {
 }
 
 main {
-  padding: 63px 10px 10px 10px;
+  padding: 50px 0 10px 0;
 }
 main .home {
   display: flex;
@@ -28,14 +29,23 @@ main .home {
   align-content: center;
   height: 500px;
   width: 100%;
-  background-image: url(../../images/sky_thick.jpg);
+  background-position: center;
+  background-size: cover;
+  color: white;
 }
 main .home #top {
   display: flex;
   align-items: center;
 }
+main .home #top h1 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 50px;
+}
 main .home p {
-  padding-left: 128px;
+  padding-left: 143px;
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 2;
 }
 main .home img {
   width: 100px;
@@ -45,21 +55,61 @@ main .home img {
   border-radius: 50%;
   object-fit: cover;
   margin-right: 28px;
+  margin-left: 10px;
 }
 main section {
   margin: 0 1vw;
+  height: 500px;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+main section ::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: white;
+  opacity: 0.5;
 }
 main section h2 {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  position: relative;
+  z-index: 3;
+  opacity: 1;
+  margin-left: 3vw;
 }
 main section p {
-  margin: 0 auto;
-  font-family: inherit;
+  margin: 0 3vw;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 2;
+}
+main section form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 10vw 0 3vw;
+}
+main section form input {
+  box-sizing: border-box;
+  width: 100%;
+}
+main section form textarea {
+  box-sizing: border-box;
+  width: 100%;
+}
+main section form .text {
+  margin: 10px 0;
 }
 
 @media screen and (max-width: 468px) {
   main .home p {
-    padding-left: 0;
+    padding: 0 2vw;
   }
 }
 @media screen and (max-width: 330px) {
@@ -69,8 +119,11 @@ main section p {
     align-items: center;
     justify-content: flex-start;
   }
+  main .home #top h1 {
+    padding: 0 2vw;
+  }
   main .home p {
-    padding-left: 0;
+    padding: 0 2vw;
   }
 }
 body {
