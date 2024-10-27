@@ -62,7 +62,6 @@ header div ul li svg:hover {
 
 footer {
   text-align: center;
-  padding: 1em;
 }
 
 @media (min-width: 1500px) {
@@ -91,43 +90,46 @@ footer {
 @media (min-width: 1500px) {
   main {
     padding: 0;
-    margin-top: -4em;
+    margin: 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
     width: 100%;
+    height: 100%;
   }
-  main div {
-    width: 40em;
-    height: 30em;
+  main .cont {
+    width: 100%;
+    height: 100%;
+    grid-column-start: 1;
+    grid-column-end: 2;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     margin: 0;
   }
-  main div .profile {
+  main .cont .profile {
+    width: 32em;
+    height: 110%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     padding: 0;
     margin: 0 auto;
+    margin-top: -2em;
+    margin-bottom: 10em;
     background-color: #393e46;
-    height: auto;
     position: fixed;
     z-index: 1;
     top: 1em;
-    box-sizing: 6em;
   }
-  main div .profile .container_profile {
+  main .cont .profile .container_profile {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-content: center;
     justify-content: center;
+    padding: 6em 0 0 0;
+    margin: 0;
     text-align: center;
   }
-  main div .profile .container_profile img {
+  main .cont .profile .container_profile img {
     width: 50%;
     border-radius: 20%;
     padding-top: 2em;
@@ -136,21 +138,23 @@ footer {
     -ms-border-radius: 20%;
     -o-border-radius: 20%;
   }
-  main div .profile .container_profile .personal_info {
+  main .cont .profile .container_profile .personal_info {
     display: flex;
     flex-direction: column;
     padding: 0 2em;
     margin: 0;
     row-gap: 0.5em;
   }
-  main div .profile .container_profile .personal_info p {
+  main .cont .profile .container_profile .personal_info p {
     margin: 0;
   }
-  main div .profile .socials {
-    height: auto;
-    padding-bottom: 0.5em;
+  main .cont .profile .socials {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
   }
-  main div .profile .socials ul {
+  main .cont .profile .socials ul {
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -160,11 +164,12 @@ footer {
     padding-top: 2em;
     column-gap: 2.5em;
   }
-  main div .profile .socials svg {
+  main .cont .profile .socials svg {
     width: 2em;
   }
   main .info {
-    grid-column: 2/4;
+    grid-column-start: 2;
+    grid-column-end: 4;
     padding: 1em;
   }
   main .info h2 {
@@ -429,7 +434,7 @@ footer {
     cursor: pointer;
   }
 }
-@media (max-width: 1500px) {
+@media (max-width: 800px) {
   header {
     margin: 0;
     position: sticky;
@@ -491,40 +496,40 @@ footer {
     flex-direction: column;
     width: 100%;
   }
-  main div {
+  main .cont {
     padding: 0;
   }
-  main div .profile {
+  main .cont .profile {
     position: static;
     background-color: #393e46;
     width: auto;
     height: auto;
   }
-  main div .profile .container_profile {
+  main .cont .profile .container_profile {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
   }
-  main div .profile .container_profile img {
+  main .cont .profile .container_profile img {
     width: auto;
     max-width: 10em;
   }
-  main div .profile .container_profile .personal_info {
+  main .cont .profile .container_profile .personal_info {
     display: flex;
     flex-direction: column;
     padding: 0 2em;
     margin: 0;
     row-gap: 0.5em;
   }
-  main div .profile .container_profile .personal_info p {
+  main .cont .profile .container_profile .personal_info p {
     margin: 0;
   }
-  main div .profile .socials {
+  main .cont .profile .socials {
     padding-bottom: 0.5em;
   }
-  main div .profile .socials ul {
+  main .cont .profile .socials ul {
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -534,7 +539,7 @@ footer {
     padding-top: 2em;
     column-gap: 2.5em;
   }
-  main div .profile .socials svg {
+  main .cont .profile .socials svg {
     width: 2.3em;
   }
   main .info {
@@ -857,16 +862,16 @@ footer {
     flex-direction: column;
     width: 100%;
   }
-  main div {
+  main .cont {
     padding: 0;
   }
-  main div .profile {
+  main .cont .profile {
     position: static;
     background-color: #393e46;
     width: auto;
     height: auto;
   }
-  main div .profile .container_profile {
+  main .cont .profile .container_profile {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -876,21 +881,21 @@ footer {
     font-size: 0.8em;
     text-align: center;
   }
-  main div .profile .container_profile img {
+  main .cont .profile .container_profile img {
     width: auto;
     max-width: 10em;
   }
-  main div .profile .container_profile .personal_info {
+  main .cont .profile .container_profile .personal_info {
     display: flex;
     flex-direction: column;
     padding: 0 2em;
     margin: 0;
     row-gap: 0.5em;
   }
-  main div .profile .container_profile .personal_info p {
+  main .cont .profile .container_profile .personal_info p {
     margin: 0;
   }
-  main div .profile .socials ul {
+  main .cont .profile .socials ul {
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -899,7 +904,7 @@ footer {
     padding: 0;
     column-gap: 2.5em;
   }
-  main div .profile .socials svg {
+  main .cont .profile .socials svg {
     width: 2em;
   }
   main .info {
