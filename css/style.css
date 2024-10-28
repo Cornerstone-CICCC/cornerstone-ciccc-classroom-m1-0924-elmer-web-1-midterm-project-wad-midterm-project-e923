@@ -1,5 +1,5 @@
 header {
-  background: linear-gradient(to right, #d2cfcb, #e5e3df);
+  background: linear-gradient(to right, #ffd6ff, #d6ffff);
   position: fixed;
   width: 100%;
   z-index: 999;
@@ -15,23 +15,21 @@ header .logo a {
   text-align: center;
   text-decoration: none;
 }
-header nav {
-  display: none;
-}
 
 main {
-  padding: 50px 0 10px 0;
+  padding: 50px 0 0 0;
 }
 main .home {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   align-content: center;
-  height: 500px;
+  height: 100vh;
   width: 100%;
   background-position: center;
   background-size: cover;
-  color: white;
+  position: relative;
+  z-index: 3;
 }
 main .home #top {
   display: flex;
@@ -43,9 +41,11 @@ main .home #top h1 {
 }
 main .home p {
   padding-left: 143px;
-  font-size: 22px;
+  font-size: 25px;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 2;
+  position: relative;
+  z-index: 3;
 }
 main .home img {
   width: 100px;
@@ -57,14 +57,7 @@ main .home img {
   margin-right: 28px;
   margin-left: 10px;
 }
-main section {
-  margin: 0 1vw;
-  height: 500px;
-  background-size: cover;
-  position: relative;
-  z-index: 1;
-}
-main section ::after {
+main .home::before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -73,38 +66,108 @@ main section ::after {
   top: 0;
   left: 0;
   background-color: white;
-  opacity: 0.5;
+  opacity: 0.3;
+}
+main section {
+  padding: 15vh 0;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
 }
 main section h2 {
+  font-size: 2rem;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   position: relative;
   z-index: 3;
-  opacity: 1;
-  margin-left: 3vw;
+  margin: 0 10vw;
+  padding-bottom: 20px;
 }
 main section p {
-  margin: 0 3vw;
+  margin: 0 10vw;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px;
+  font-size: 22px;
   line-height: 2;
+  position: relative;
+  z-index: 3;
+}
+main section ul {
+  line-height: 3;
+  margin: 0 10vw;
+}
+main section ul li {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
 }
 main section form {
   display: flex;
   flex-direction: column;
   width: 100%;
-  box-sizing: border-box;
-  padding: 0 10vw 0 3vw;
+  padding: 0 10vw 0 10vw;
+  position: relative;
+  z-index: 3;
 }
 main section form input {
-  box-sizing: border-box;
   width: 100%;
 }
 main section form textarea {
-  box-sizing: border-box;
   width: 100%;
 }
 main section form .text {
   margin: 10px 0;
+}
+main .piano::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: white;
+  opacity: 0.6;
+}
+main .note::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: white;
+  opacity: 0.6;
+}
+main .portfolio {
+  background-color: #f9fcff;
+}
+main .portfolio a {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: 30px;
+}
+main .portfolio a img {
+  width: 80vw;
+  height: 40vw;
+  object-fit: cover;
+  box-shadow: 0 0.5px 4px grey;
+  transition: all 0.2s ease;
+}
+main .portfolio a img:hover {
+  box-shadow: 0 3px 8px grey;
+  transform: translateY(-1px);
+}
+main .portfolio a span {
+  position: absolute;
+  bottom: -40px;
+}
+main .nightsky {
+  color: white;
+  height: 600px;
 }
 
 @media screen and (max-width: 468px) {
@@ -126,10 +189,61 @@ main section form .text {
     padding: 0 2vw;
   }
 }
+@media screen and (min-width: 800px) {
+  * {
+    box-sizing: border-box;
+  }
+  body .home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  body .home #top {
+    margin: 0 25vw;
+  }
+  body .home #top h1 {
+    padding-left: 20px;
+  }
+  body .home p {
+    margin: 0 25vw;
+    padding: 3vw 0 0 30px;
+  }
+  body section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  body section h2 {
+    margin: 0 25vw;
+  }
+  body section p {
+    margin: 10px 25vw;
+  }
+  body section ul {
+    margin: 0 25vw;
+    line-height: 3;
+  }
+  body section form {
+    display: flex;
+    justify-content: center;
+    margin: 0 25vw;
+    padding: 0;
+    width: 100%;
+    max-width: 499px;
+  }
+  body .portfolio a img {
+    width: 50vw;
+    height: 30vw;
+  }
+}
 body {
   width: 100%;
-  box-sizing: border-box;
   margin: 0;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 /*# sourceMappingURL=style.css.map */
