@@ -33,6 +33,11 @@
     text-decoration: none;
   }
 
+  nav ul li a:hover {
+    color: #aaa;
+    font-size: 17px;
+  }
+
   .top-img {
     margin: 30px;
     position: relative;
@@ -76,6 +81,7 @@
   #products .text {
     flex: 1;
     text-align: center;
+    border-bottom: 1px solid #000;;
   }
 
   #products .box .img {
@@ -84,39 +90,6 @@
 
   #products img {
     width: 100%;
-  }
-
-  @media screen and (max-width:675px){
-    .box {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-
-    header {
-      margin: 10px 40px;
-    }
-
-    nav ul li {
-      display: inline;
-      margin: 0 7px;
-    }
-    
-    nav ul li a {
-      font-size: 15px;
-    }
-
-    .top-img div {
-      top: 35px;
-      left: 17px;
-    }
-    .top-img .name {
-      font-size: 30px;
-    }
-    .top-img p {
-      font-size: 15px;
-    }
   }
 
   #skills {
@@ -166,6 +139,43 @@
 
   }
 
+  #contact .inner .contact-body {
+    margin-top: 10px;
+  }
+
+  #contact .inner .contact-item {
+    margin-top: 10px;
+  }
+
+  #contact .textbox {
+    width: 30%;
+    padding: 8px 10px;
+    border: 1px solid #969da3;
+    border-radius: 25px;
+    color: #333;
+    font-size: 1em;
+    line-height: 1.5;
+  }
+
+  #contact .textbox::placeholder {
+      color: #999;
+  }
+
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 20%;
+    margin: 30px auto;
+    padding: .9em 2em;
+    border: 1px solid #c9b0a6;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #c9b0a6;
+    font-size: 1em;
+  }
+
   section h2 {
     font-size: 1.5em;
   }
@@ -177,3 +187,35 @@
     color: white;
   }
   
+  @media screen and (max-width:675px){
+    .box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    header {
+      margin: 10px 40px;
+    }
+
+    nav ul li {
+      display: inline;
+      margin: 0 7px;
+    }
+    
+    nav ul li a {
+      font-size: 12px;
+    }
+
+    .top-img div {
+      top: 35px;
+      left: 17px;
+    }
+    .top-img .name {
+      font-size: 30px;
+    }
+    .top-img p {
+      font-size: 15px;
+    }
+  }
