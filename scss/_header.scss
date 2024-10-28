@@ -1,23 +1,49 @@
 @import "variables";
+
 header{
+    margin: 0;
+    position: sticky;
+    z-index: 1;
+    top: 0;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     div{
         height: 3.5em;
-        width: 13em;
+        width: 100%;
         background-color:$nav_bar_color;
+        transition: 1s;
+        -webkit-transition: 1s;
+        -moz-transition: 1s;
+        -ms-transition: 1s;
+        -o-transition: 1s;
+        box-shadow: none;
+        &:hover{
+            box-shadow: 2px 2px 20px 2px  $text_color;
+        }
         ul{
             display: flex;
             flex-direction: row;
-            column-gap: 10px;
-    
+            column-gap: 40px;
+            padding: 0;
+            justify-content: center;
+            align-items: center;
             li{
                 list-style: none;
                 svg{
-                    width: 1.5em;
+                    width: 2em;
+                    opacity: 0.5;
+                    transition: 1s;
+                    -webkit-transition: 1s;
+                    -moz-transition: 1s;
+                    -ms-transition: 1s;
+                    -o-transition: 1s;
+                    &:hover{
+                        opacity: 1;
+                        }
                 }
+                
             }
         }
     }
